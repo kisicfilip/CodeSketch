@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "ebrima";
+    src: url("../src/assets/ebrima.ttf");
+}
+
+@font-face {
+    font-family: "ebrimaBold";
+    src: url("../src/assets/ebrima-bold.ttf");
+}
+
+body{
+    background-color: #0F0F10;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .faq-answer.open {
+    max-height: 200px; 
+  }
+  
+  .faq-answer.closed {
+    max-height: 0;
+  }
+
+  .nav a, .project span {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .nav a::before, .project span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #A984E5; /* Set the underline color */
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav a:hover::before, .project span:hover::before {
+    width: 100%;
+  }
+
+.contact-us-btn{
+  transition: 0.2s all;
+  border: solid 2px transparent;
+}
+
+.contact-us-btn:hover{
+  background-color: transparent;
+  border: solid 2px #657EC5;
+}
+
+.our-services-btn{
+  transition: 0.2s all;
+  border: 2px solid #A984E5;
+}
+
+.our-services-btn:hover{
+  background-color: #A984E5;
+  border: 2px solid transparent;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the value based on your desired movement */
+  }
+}
+
+.hero_logo_img {
+  animation: moveUpDown 6s infinite; /* Adjust the duration as needed */
+}
