@@ -22,7 +22,7 @@ const NavBar = () => {
     <Element name="homeSection">
       <div className="relative">
         <div className="w-full flex flex-col justify-between py-4 text-xl font-ebrima text-white nav">
-          <div className="flex justify-between px-6 md:px-12 lg:px-24">
+          <div className="flex justify-between px-6 md:px-12 lg:px-24 items-center">
             <h2
               className="font-ebrimaBold text-2xl lg:text-3xl leading-tight tracking-wide z-10"
               style={gradientStyle}
