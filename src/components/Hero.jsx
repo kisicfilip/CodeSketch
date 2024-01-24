@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 const Hero = () => {
   return (
     <div>
-      <div className="flex justify-center items-center max-w-[1600px] mx-auto pt-[80px]">
+      <div className="flex justify-center items-center max-w-[1600px] mx-auto py-[100px]">
         <div className=" relative">
           <img src={HeroLogo} alt="" className="hero_logo_img" />
         </div>
