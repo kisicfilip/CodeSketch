@@ -24,22 +24,32 @@ body{
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
   }
+
+  .mobileMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
   
   .faq-answer.open {
     max-height: 200px; 
   }
+
+  .mobileMenu.open{
+    max-height: 270px;
+  }
   
-  .faq-answer.closed {
+  .faq-answer.closed, .mobileMenu.closed {
     max-height: 0;
   }
 
-  .nav a, .project span {
+  .nav a, .project span, .navMob li {
     position: relative;
     text-decoration: none;
     cursor: pointer;
   }
 
-  .nav a::before, .project span::before {
+  .nav a::before, .project span::before, .navMob li::before {
     content: "";
     position: absolute;
     width: 0;
@@ -47,10 +57,10 @@ body{
     bottom: -5px;
     left: 0;
     background-color: #A984E5; /* Set the underline color */
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease;
   }
 
-  .nav a:hover::before, .project span:hover::before {
+  .nav a:hover::before, .project span:hover::before, .navMob li:hover::before {
     width: 100%;
   }
 

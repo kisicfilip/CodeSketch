@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="overflow-x-hidden">
       <ScrollToTopButton />
-      <div className="relative overflow-hidden h-[990px]">
+      <div className="relative overflow-hidden">
         <div>
           <div style={circleStyle1}></div>
           <div style={circleStyle2}></div>

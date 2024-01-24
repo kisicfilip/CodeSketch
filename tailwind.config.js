@@ -7,7 +7,7 @@ module.exports = {
     fontFamily: {
       ebrima: ["Ebrima", "sans-serif"],
       ebrimaBold: ["EbrimaBold", "sans-serif"],
-    },
+    }
   },
   plugins: [],
 }
