@@ -54,12 +54,12 @@ body{
     width: 100%;
   }
 
-.contact-us-btn{
+.contact-us-btn, form .form_btn{
   transition: 0.2s all;
   border: solid 2px transparent;
 }
 
-.contact-us-btn:hover{
+.contact-us-btn:hover, form .form_btn:hover{
   background-color: transparent;
   border: solid 2px #657EC5;
 }
