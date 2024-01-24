@@ -8,6 +8,7 @@ import FAQ from "./components/FAQ";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Reveal from "./components/Reveal";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   const circleStyle1 = {
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <div className="overflow-x-hidden">
+      <ScrollToTopButton />
       <div className="relative overflow-hidden h-[990px]">
         <div>
           <div style={circleStyle1}></div>
